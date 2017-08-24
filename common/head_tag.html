@@ -1,18 +1,1 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-<script type="text/discourse-plugin" version="0.4">
-api.decorateWidget('home-logo:after', helper => {
- const showExtraInfo = helper.attrs.minimized;
- if(!showExtraInfo) {
- return helper.h('div#header-links', [
- helper.h('a#header-home', {
- href:'https://chakralinux.org/',
- text:'Home'
- }),
- helper.h('a#header-code', {
- href:'https://code.chakralinux.org/',
- text:'Code'
- })
- ]);
- }
-});
-</script>
